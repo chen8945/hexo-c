@@ -2,6 +2,7 @@
 User-agent: *
 
 # 不允许访问的内容
+Disallow: /fonts/
 Disallow: /img/
 Disallow: /css/
 Disallow: /js/
