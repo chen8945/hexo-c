@@ -4,49 +4,56 @@
   <url>
     <loc>https://blog.piglets.top/about/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/categories/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/envelope/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/gallery/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/link/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/tags/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.piglets.top/gallery/genshin/index.html</loc>
     
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.piglets.top/posts/wk45fsw3/</loc>
+    
+    <lastmod>2021-10-19</lastmod>
     
   </url>
   
@@ -88,36 +95,43 @@
 
   <url>
     <loc>https://blog.piglets.top/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://blog.piglets.top/tags/Docker/</loc>
+    <lastmod>2021-10-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.piglets.top/tags/Markdown/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.piglets.top/tags/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.piglets.top/tags/Github/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.piglets.top/tags/Hexo/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -126,14 +140,14 @@
   
   <url>
     <loc>https://blog.piglets.top/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.piglets.top/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2021-10-18</lastmod>
+    <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
