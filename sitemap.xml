@@ -74,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://blog.piglets.top/posts/8uw7vea5/</loc>
+    
+    <lastmod>2022-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.piglets.top/posts/wk45fsw3/</loc>
     
     <lastmod>2021-10-19</lastmod>
@@ -138,6 +147,20 @@
   
   <url>
     <loc>https://blog.piglets.top/tags/Docker/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.piglets.top/tags/%E7%A7%81%E6%9C%89%E5%8C%96/</loc>
+    <lastmod>2022-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.piglets.top/tags/%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/</loc>
     <lastmod>2022-04-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
