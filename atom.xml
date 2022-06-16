@@ -6,7 +6,7 @@
   <link href="https://blog.piglets.top/atom.xml" rel="self"/>
   
   <link href="https://blog.piglets.top/"/>
-  <updated>2022-05-28T08:00:00.000Z</updated>
+  <updated>2022-06-16T13:00:00.000Z</updated>
   <id>https://blog.piglets.top/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Azure Active Directory(AAD)应用密码自定义到期时间</title>
+    <link href="https://blog.piglets.top/posts/eyajm6sx/"/>
+    <id>https://blog.piglets.top/posts/eyajm6sx/</id>
+    <published>2022-06-16T13:00:00.000Z</published>
+    <updated>2022-06-16T13:00:00.000Z</updated>
+    
+    
+    <summary type="html">将原本限制时长两年的密码改为自定义到期时间。</summary>
+    
+    
+    
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
+    
+    
+    <category term="Microsoft" scheme="https://blog.piglets.top/tags/Microsoft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rclone 挂载及开机自启</title>
+    <link href="https://blog.piglets.top/posts/rkm8ctu8/"/>
+    <id>https://blog.piglets.top/posts/rkm8ctu8/</id>
+    <published>2022-05-29T09:00:00.000Z</published>
+    <updated>2022-05-29T09:00:00.000Z</updated>
+    
+    
+    <summary type="html">记录一些偶尔DD后用到的一些命令，节约时间不用到处再找一遍。</summary>
+    
+    
+    
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
+    
+    
+    <category term="Rclone" scheme="https://blog.piglets.top/tags/Rclone/"/>
+    
+  </entry>
   
   <entry>
     <title>偶尔DD后用到的一些命令</title>
@@ -40,7 +78,7 @@
     <link href="https://blog.piglets.top/posts/fsotd9we/"/>
     <id>https://blog.piglets.top/posts/fsotd9we/</id>
     <published>2022-05-06T03:00:00.000Z</published>
-    <updated>2022-05-06T03:00:00.000Z</updated>
+    <updated>2022-06-15T14:00:00.000Z</updated>
     
     
     <summary type="html">全自动化免费证书申请及续期。</summary>

@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Azure Active Directory(AAD)应用密码自定义到期时间</title>
+      <link href="/posts/eyajm6sx/"/>
+      <url>/posts/eyajm6sx/</url>
+      
+        <content type="html"><![CDATA[<h2 id="网站"><a class="markdownIt-Anchor" href="#网站"></a> 网站</h2><p>Azure Active Directory应用注册: <a href="https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps">https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps</a><br />Microsoft Graph: <a href="https://developer.microsoft.com/zh-cn/graph/graph-explorer">https://developer.microsoft.com/zh-cn/graph/graph-explorer</a></p><h2 id="步骤"><a class="markdownIt-Anchor" href="#步骤"></a> 步骤</h2><blockquote><p><code>Microsoft Graph</code>需要使用全局管理员登录，否则会提示需要管理员授权。</p></blockquote><ol><li><p>进入<code>Azure Active Directory应用注册</code>界面新注册一个应用或者点击已有应用<br /><img src="https://github.elemecdn.com/images-c@latest/img/posts/eyajm6sx/1-1.png" alt="1-1" /></p></li><li><p>复制<code>对象ID</code><br /><img src="https://github.elemecdn.com/images-c@latest/img/posts/eyajm6sx/2-1.png" alt="2-1" /></p></li><li><p>进入<code>Microsoft Graph</code>将请求方法改为<code>POST</code>，并将请求地址为<code>https://graph.microsoft.com/v1.0/applications/&#123;上一步复制的对象ID&#125;/addPassword</code>，替换<code>&#123;上一步复制的对象ID&#125;</code><br /><img src="https://github.elemecdn.com/images-c@latest/img/posts/eyajm6sx/3-1.png" alt="3-1" /></p></li><li><p>修改权限<br /><img src="https://github.elemecdn.com/images-c@latest/img/posts/eyajm6sx/4-1.png" alt="4-1" /></p></li><li><p>添加<code>请求正文</code>，此处示例到期时间为<code>2099年12月31日</code>，<code>displayName</code>为密码说明，<code>endDateTime</code>为密码到期时间，请按照自己的需求更改<br /><img src="https://github.elemecdn.com/images-c@latest/img/posts/eyajm6sx/5-1.png" alt="5-1" /></p></li></ol><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;passwordCredential&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;displayName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;到期时间2099年&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;endDateTime&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2099-12-31T00:00:00Z&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><ol start="6"><li><p>点击右上角<code>运行查询</code>，<code>响应预览</code>内容中<code>secretText</code>即是需要的密码<br /><img src="https://github.elemecdn.com/images-c@0.1.21/img/posts/eyajm6sx/6-1.png" alt="6-1" /></p></li><li><p>返回应用界面点击<code>证书和密码</code>确认是否成功<br /><img src="https://github.elemecdn.com/images-c@0.1.21/img/posts/eyajm6sx/7-1.png" alt="7-1" /></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好记性不如烂笔头 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Microsoft </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Rclone 挂载及开机自启</title>
+      <link href="/posts/rkm8ctu8/"/>
+      <url>/posts/rkm8ctu8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2><blockquote><p>官方网站:<a href="https://rclone.org">https://rclone.org</a></p></blockquote><p>Rclone是一个命令行程序，用于管理云存储上的文件。它是云供应商的Web存储接口的功能丰富的替代方案。超过40种云存储产品支持rclone，包括S3对象存储，商业和消费者文件存储服务以及标准传输协议。</p><h3 id="作用"><a class="markdownIt-Anchor" href="#作用"></a> 作用：</h3><ul><li>将文件备份（和加密）到云存储</li><li>从云存储还原（和解密）文件</li><li>将云数据镜像到其他云服务或本地</li><li>将数据迁移到云，或在云存储供应商之间迁移数据</li><li>将多个、加密、缓存或多样化的云存储挂载为磁盘</li><li>使用lsf，ljson，size，ncdu分析和说明云存储上保存的数据</li><li>将文件系统合并在一起，将多个本地和/或云文件系统呈现为一个</li></ul><h3 id="特点"><a class="markdownIt-Anchor" href="#特点"></a> 特点</h3><ul><li>转移<ul><li>始终检查 MD5、SHA1 哈希的文件完整性</li><li>时间戳保留在文件上</li><li>可随时重新启动操作</li><li>可以往返网络，例如两个不同的云提供商</li><li>可以使用多线程下载到本地磁盘</li></ul></li><li>将新文件或已更改的文件复制到云存储</li><li>同步（单向）以使目录相同</li><li>将文件移动到云存储，验证后删除本地文件</li><li>检查哈希值和丢失/额外文件</li><li>将云存储挂载为网络磁盘</li><li>通过 HTTP/WebDav/FTP/SFTP/dlna 提供本地或远程文件</li><li>实验性的基于网络的图形用户界面</li></ul><h2 id="部署"><a class="markdownIt-Anchor" href="#部署"></a> 部署</h2><h3 id="安装-rclone"><a class="markdownIt-Anchor" href="#安装-rclone"></a> 安装 Rclone</h3><p>官方一键安装脚本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://rclone.org/install.sh | sudo bash</span><br></pre></td></tr></table></figure><h3 id="配置rclone"><a class="markdownIt-Anchor" href="#配置rclone"></a> 配置Rclone</h3><p>输入指令按提示操作</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone config</span><br></pre></td></tr></table></figure><h3 id="安装-fuse"><a class="markdownIt-Anchor" href="#安装-fuse"></a> 安装 Fuse</h3><p>Debian/Ubantu</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install -y fuse</span><br></pre></td></tr></table></figure><p>CentOS</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y fuse</span><br></pre></td></tr></table></figure><h3 id="挂载网盘"><a class="markdownIt-Anchor" href="#挂载网盘"></a> 挂载网盘</h3><blockquote><p>以下为手动挂载以及开机自动挂载两种方法</p></blockquote><h4 id="手动挂载"><a class="markdownIt-Anchor" href="#手动挂载"></a> 手动挂载</h4><p>挂载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone mount &lt;网盘名称:网盘路径&gt; &lt;本地路径&gt; [参数] --daemon</span><br></pre></td></tr></table></figure><p>取消挂载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fusermount -qzu &lt;本地路径&gt;</span><br></pre></td></tr></table></figure><p>查看挂载情况</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">df</span> -h</span><br></pre></td></tr></table></figure><p>手动挂载示例</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rclone mount jianguoyun:/backup /root/backup --copy-links --allow-other --allow-non-empty --<span class="built_in">umask</span> 000 --daemon --vfs-cache-mode full --log-file /var/log/rclone_mount.log</span><br></pre></td></tr></table></figure><h3 id="开机自动挂载"><a class="markdownIt-Anchor" href="#开机自动挂载"></a> 开机自动挂载</h3><p>下载脚本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N git.io/rcloned</span><br></pre></td></tr></table></figure><p>修改脚本相应内容</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NAME=&quot;jianguoyun&quot;   # Rclone配置时填写的name</span><br><span class="line">REMOTE=&#x27;backup&#x27;   # 远程文件夹，网盘里的挂载的一个文件夹，留空为整个网盘</span><br><span class="line">LOCAL=&#x27;/root/backup&#x27;   # 挂载地址，VPS本地挂载目录</span><br><span class="line">LOG=&quot;/var/log/rclone_mount.log&quot;   # 日志输出位置</span><br></pre></td></tr></table></figure><p>设置开机自启</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> rcloned /etc/init.d/rcloned</span><br><span class="line"><span class="built_in">chmod</span> +x /etc/init.d/rcloned</span><br><span class="line"></span><br><span class="line"><span class="comment"># Debian/Ubuntu</span></span><br><span class="line">update-rc.d -f rcloned defaults</span><br><span class="line"> </span><br><span class="line"><span class="comment"># CentOS</span></span><br><span class="line">chkconfig rcloned on</span><br><span class="line">bash /etc/init.d/rcloned start</span><br></pre></td></tr></table></figure><p>管理</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开始挂载</span></span><br><span class="line">bash /etc/init.d/rcloned start</span><br><span class="line"><span class="comment"># 停止挂载</span></span><br><span class="line">bash /etc/init.d/rcloned stop</span><br><span class="line"><span class="comment"># 重新挂载</span></span><br><span class="line">bash /etc/init.d/rcloned restart</span><br><span class="line"><span class="comment"># 查看日志</span></span><br><span class="line"><span class="built_in">tail</span> -f /var/log/rclone_mount.log</span><br></pre></td></tr></table></figure><p>卸载自动挂载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bash /etc/init.d/rcloned stop</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Debian/Ubuntu</span></span><br><span class="line">update-rc.d -f rcloned remove</span><br><span class="line"> </span><br><span class="line"><span class="comment"># CentOS</span></span><br><span class="line">chkconfig rcloned off</span><br><span class="line"><span class="built_in">rm</span> -f /etc/init.d/rcloned</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好记性不如烂笔头 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rclone </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>偶尔DD后用到的一些命令</title>
       <link href="/posts/n4z66mz3/"/>
       <url>/posts/n4z66mz3/</url>
