@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.piglets.top/posts/rkm8ctu8/</loc>
+    
+    <lastmod>2022-06-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.piglets.top/about/index.html</loc>
     
     <lastmod>2022-06-22</lastmod>
@@ -95,15 +104,6 @@
     <loc>https://blog.piglets.top/posts/wk45fsw3/</loc>
     
     <lastmod>2022-06-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.piglets.top/posts/rkm8ctu8/</loc>
-    
-    <lastmod>2022-05-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
