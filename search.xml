@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux搭建饥荒专用服务器</title>
+      <link href="/posts/4vw1q9sr/"/>
+      <url>/posts/4vw1q9sr/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装steamcmd"><a class="markdownIt-Anchor" href="#安装steamcmd"></a> 安装SteamCMD</h2><p>此处以 <code>Ubuntu</code> 为例，并提供两种安装<code>SteamCMD</code>的方式，不同安装方式后续启动<code>SteamCMD</code>方法也不同</p><div class="tabs" id="steamcmd"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#steamcmd-1">手动安装</button></li><li class="tab"><button type="button" data-href="#steamcmd-2">自动安装</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="steamcmd-1"><p>安装依赖</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br><span class="line">apt install libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386 lib32gcc1</span><br></pre></td></tr></table></figure><p>新建用户</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -m steam</span><br></pre></td></tr></table></figure><p>安装SteamCMD</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su steam</span><br><span class="line"><span class="built_in">mkdir</span> /home/steam/steamcmd</span><br><span class="line"><span class="built_in">cd</span> /home/steam/steamcmd</span><br><span class="line">curl -sqL <span class="string">&quot;https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz&quot;</span> | tar zxvf -</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="steamcmd-2"><p>新建用户</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -m steam</span><br></pre></td></tr></table></figure><p>安装SteamCMD</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt install lib32gcc1 steamcmd </span><br><span class="line"><span class="built_in">ln</span> -s /usr/games/steamcmd steamcmd</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h2 id="下载饥荒服务端"><a class="markdownIt-Anchor" href="#下载饥荒服务端"></a> 下载饥荒服务端</h2><h3 id="启动steamcmd"><a class="markdownIt-Anchor" href="#启动steamcmd"></a> 启动SteamCMD</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 手动安装启动方式</span></span><br><span class="line"><span class="built_in">cd</span> /home/steam/steamcmd</span><br><span class="line">./steamcmd.sh</span><br><span class="line"><span class="comment"># 自动安装启动方式</span></span><br><span class="line">su steam</span><br><span class="line">steamcmd</span><br></pre></td></tr></table></figure><h3 id="匿名登录"><a class="markdownIt-Anchor" href="#匿名登录"></a> 匿名登录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">login anonymous</span><br></pre></td></tr></table></figure><h3 id="指定下载目录"><a class="markdownIt-Anchor" href="#指定下载目录"></a> 指定下载目录</h3><p><code>/home/steam/dst</code>为指定的目录</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">force_install_dir /home/steam/dst</span><br></pre></td></tr></table></figure><h3 id="下载服务端"><a class="markdownIt-Anchor" href="#下载服务端"></a> 下载服务端</h3><p><code>343050</code>为饥荒ID</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app_update 343050 validate</span><br></pre></td></tr></table></figure><h3 id="退出steamcmd"><a class="markdownIt-Anchor" href="#退出steamcmd"></a> 退出SteamCMD</h3><p>下载结束后退出<code>SteamCMD</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">quit</span><br></pre></td></tr></table></figure><h2 id="启动饥荒服务端"><a class="markdownIt-Anchor" href="#启动饥荒服务端"></a> 启动饥荒服务端</h2><p><strong>未完待续</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好记性不如烂笔头 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 饥荒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Azure Active Directory(AAD)应用密码自定义到期时间</title>
       <link href="/posts/eyajm6sx/"/>
       <url>/posts/eyajm6sx/</url>
@@ -88,7 +113,7 @@
       
       <categories>
           
-          <category> 干货分享 </category>
+          <category> 好记性不如烂笔头 </category>
           
       </categories>
       
@@ -115,7 +140,7 @@
       
       <categories>
           
-          <category> 干货分享 </category>
+          <category> 好记性不如烂笔头 </category>
           
       </categories>
       
@@ -167,7 +192,7 @@
       
       <categories>
           
-          <category> 干货分享 </category>
+          <category> 好记性不如烂笔头 </category>
           
       </categories>
       
@@ -205,7 +230,7 @@
       
       <categories>
           
-          <category> 干货分享 </category>
+          <category> 好记性不如烂笔头 </category>
           
       </categories>
       

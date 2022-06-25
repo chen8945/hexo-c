@@ -6,7 +6,7 @@
   <link href="https://blog.piglets.top/atom.xml" rel="self"/>
   
   <link href="https://blog.piglets.top/"/>
-  <updated>2022-06-16T13:00:00.000Z</updated>
+  <updated>2022-06-25T16:00:00.000Z</updated>
   <id>https://blog.piglets.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux搭建饥荒专用服务器</title>
+    <link href="https://blog.piglets.top/posts/4vw1q9sr/"/>
+    <id>https://blog.piglets.top/posts/4vw1q9sr/</id>
+    <published>2022-06-25T16:00:00.000Z</published>
+    <updated>2022-06-25T16:00:00.000Z</updated>
+    
+    
+    <summary type="html">饥荒专用服务器搭建过程。</summary>
+    
+    
+    
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
+    
+    
+    <category term="饥荒" scheme="https://blog.piglets.top/tags/%E9%A5%A5%E8%8D%92/"/>
+    
+  </entry>
   
   <entry>
     <title>Azure Active Directory(AAD)应用密码自定义到期时间</title>
@@ -85,7 +104,7 @@
     
     
     
-    <category term="干货分享" scheme="https://blog.piglets.top/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
     
     
     <category term="SSL" scheme="https://blog.piglets.top/tags/SSL/"/>
@@ -106,7 +125,7 @@
     
     
     
-    <category term="干货分享" scheme="https://blog.piglets.top/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
     
     
     <category term="私有化" scheme="https://blog.piglets.top/tags/%E7%A7%81%E6%9C%89%E5%8C%96/"/>
@@ -146,7 +165,7 @@
     
     
     
-    <category term="干货分享" scheme="https://blog.piglets.top/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
     
     
     <category term="网易云音乐" scheme="https://blog.piglets.top/tags/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/"/>
@@ -180,7 +199,7 @@
     
     
     
-    <category term="干货分享" scheme="https://blog.piglets.top/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
     
     
     <category term="Github" scheme="https://blog.piglets.top/tags/Github/"/>
