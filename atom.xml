@@ -6,7 +6,7 @@
   <link href="https://blog.piglets.top/atom.xml" rel="self"/>
   
   <link href="https://blog.piglets.top/"/>
-  <updated>2022-06-25T16:00:00.000Z</updated>
+  <updated>2022-07-14T05:00:00.000Z</updated>
   <id>https://blog.piglets.top/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>笔记本关闭睿频</title>
+    <link href="https://blog.piglets.top/posts/9salkf1s/"/>
+    <id>https://blog.piglets.top/posts/9salkf1s/</id>
+    <published>2022-07-14T05:00:00.000Z</published>
+    <updated>2022-07-14T05:00:00.000Z</updated>
+    
+    
+    <summary type="html">夏天来了，关闭睿频以求温度的降低。</summary>
+    
+    
+    
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
+    
+    
+    <category term="笔记本" scheme="https://blog.piglets.top/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>饥荒服务端及MOD配置详解</title>
+    <link href="https://blog.piglets.top/posts/1ns4jal6/"/>
+    <id>https://blog.piglets.top/posts/1ns4jal6/</id>
+    <published>2022-07-14T04:00:00.000Z</published>
+    <updated>2022-07-14T04:00:00.000Z</updated>
+    
+    
+    <summary type="html">饥荒服务端配置文件结构及说明。</summary>
+    
+    
+    
+    <category term="好记性不如烂笔头" scheme="https://blog.piglets.top/categories/%E5%A5%BD%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A6%82%E7%83%82%E7%AC%94%E5%A4%B4/"/>
+    
+    
+    <category term="饥荒" scheme="https://blog.piglets.top/tags/%E9%A5%A5%E8%8D%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux搭建饥荒专用服务器</title>
     <link href="https://blog.piglets.top/posts/4vw1q9sr/"/>
     <id>https://blog.piglets.top/posts/4vw1q9sr/</id>
     <published>2022-06-25T16:00:00.000Z</published>
-    <updated>2022-06-25T16:00:00.000Z</updated>
+    <updated>2022-07-14T04:00:00.000Z</updated>
     
     
     <summary type="html">饥荒专用服务器搭建过程。</summary>
